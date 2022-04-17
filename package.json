@@ -1,0 +1,26 @@
+{
+	"name": "centinelaserver",
+	"version": "1.0.0",
+	"description": "Server for handling sensitive data from Centinela",
+	"main": "app.js",
+	"scripts": {
+		"start": "node app.js",
+		"dev": "nodemon app.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Ant3ney/centinela-server.git"
+	},
+	"author": "Anthony Cavuoti",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Ant3ney/centinela-server/issues"
+	},
+	"homepage": "https://github.com/Ant3ney/centinela-server#readme",
+	"dependencies": {
+		"dotenv": "^16.0.0",
+		"express": "^4.17.3",
+		"googleapis": "^100.0.0"
+	}
+}
