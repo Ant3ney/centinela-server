@@ -22,7 +22,7 @@ eventUtils = {
 		});
 		return new Promise((resolve, reject) => {
 			calendar.events
-				.list({ calendarId: 'nd7vi6lepghbjmm63bssk8vjlc@group.calendar.google.com', timeMin: new Date() })
+				.list({ calendarId: process.env.CALENDAR_ID, timeMin: new Date() })
 				.then(res => {
 					if (!res || !res.data || !res.data.items) {
 						return reject({ message: 'Failded to properly the query google calander API' });
